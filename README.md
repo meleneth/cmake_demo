@@ -20,3 +20,6 @@ cmake --build . --verbose
 to rebuild, just
 cmake --build .
 
+04_lib_based_cmake
+build instructions same as 03_simple_cmake
+
