@@ -1,3 +1,3 @@
 *.o
 some_program
-
+*.d
