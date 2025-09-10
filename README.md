@@ -23,3 +23,14 @@ cmake --build .
 04_lib_based_cmake
 build instructions same as 03_simple_cmake
 
+05_cmake_with_deps
+build instructions same as 03_simple_cmake
+
+./some_program
+./some_program -d
+
+06_cmake_with_tests
+build instructions same as 03_simple_cmake
+
+./tests/sp_test
+
