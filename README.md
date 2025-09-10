@@ -67,6 +67,6 @@ Build instructions are the same as **03_simple_cmake**.
 
 Run tests:
 ```bash
-./tests/sp_test
+ctest
 ```
 

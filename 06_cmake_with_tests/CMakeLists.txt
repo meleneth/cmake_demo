@@ -14,6 +14,7 @@ CPMAddPackage("gh:gabime/spdlog@1.13.0")
 
 list(APPEND CMAKE_MODULE_PATH "${Catch2_SOURCE_DIR}/extras")
 
+enable_testing()
 add_subdirectory(tests)
 
 add_executable(some_program
