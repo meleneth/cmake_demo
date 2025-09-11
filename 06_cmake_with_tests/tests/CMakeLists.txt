@@ -4,17 +4,17 @@
 file(GLOB_RECURSE TEST_SOURCES CONFIGURE_DEPENDS *.cpp)
 
 # Test executable (uses Catch2WithMain)
-add_executable(sp_tests ${TEST_SOURCES})
+add_executable(test_some ${TEST_SOURCES})
 
 # Link test binary with main code + test framework
-target_link_libraries(sp_tests
+target_link_libraries(test_some
     PRIVATE
-        secondary
+        some
         Catch2::Catch2WithMain
         spdlog::spdlog
 )
 
-target_include_directories(sp_tests
+target_include_directories(test_some
     PRIVATE
         ${CMAKE_SOURCE_DIR}/src/secondary
 )
@@ -23,4 +23,4 @@ target_include_directories(sp_tests
 # Test discovery integration
 include(CTest)
 include(Catch)
-catch_discover_tests(sp_tests)
+catch_discover_tests(test_some)

@@ -15,17 +15,17 @@ add_executable(some_program
     src/main.cpp
 )
 
-add_library(secondary
+add_library(some
     src/secondary/secondary.cpp
 )
 
-target_include_directories(secondary PUBLIC
+target_include_directories(some PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/src/secondary
 )
 
 target_link_libraries(some_program
   PRIVATE
-  secondary
+  some
   spdlog::spdlog
   CLI11::CLI11
 )
